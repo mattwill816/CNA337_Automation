@@ -1,5 +1,8 @@
-class Server:
-    """ Server class for representing and manipulating servers. """
+# This is the template code for the CNA337 Final Project
+# Matthew Williams
+# CNA 337 Fall 2020
+#Worked with Dylan McCormack,  Eric Yevenko
+#Received help from Hassan
 
     def __init__(self, server_ip):
         # TODO -
@@ -7,4 +10,5 @@ class Server:
 
     def ping(self):
         # TODO - Use os module to ping the server
-        return
+        EC2Matt = os.system("ping -n 4 " + self.server_ip)
+        return self.server_ip
